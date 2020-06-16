@@ -1,0 +1,22 @@
+.cover{
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: 0 -23vw;
+}
+.py-5-custom{
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+#pixel2{
+    transition: .2s;
+}
+#product-image{
+    max-width: 50% !important;
+}
+#pixel2:hover{
+    background-color: honeydew !important;
+    color: rgb(0, 0, 0) !important;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right:2px solid rgb(0, 0, 0);
+    
+}
