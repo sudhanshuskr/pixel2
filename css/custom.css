@@ -11,12 +11,22 @@
     transition: .2s;
 }
 #product-image{
-    max-width: 50% !important;
+    max-width: 70% !important;
 }
 #pixel2:hover{
-    background-color: honeydew !important;
-    color: rgb(0, 0, 0) !important;
+    background-color: #343a40b0 !important;
+    color: #f8f9fa  !important;
     border-left: 2px solid rgb(0, 0, 0);
     border-right:2px solid rgb(0, 0, 0);
     
+}
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+#why{
+    transition: 2s ;
+}
+#why:hover::after{
+    content: " ? ";
+
 }
