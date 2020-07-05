@@ -19,10 +19,11 @@
   <body>
     <div class="container-fluid">
       <div class="row" >
-
-          <div class="container-fluid col-4 col-sm-2 py-5-custom text-center bg-dark text-light" id="pixel2">
-            <p class="mb-0">Pixel 2</p>
-          </div>
+          
+        <div class="container-fluid col-4 col-sm-2 py-5-custom text-center bg-dark text-light" id="pixel2">
+          <p class="mb-0">Pixel 2</p>
+        </div>
+          
           
         <div class = "container-fluid col-8 col-sm-10 cover">
         
@@ -40,9 +41,6 @@
         <ul class="navbar-nav justify-content-start mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="hardware.html">Hardware</a>
@@ -312,6 +310,14 @@
       $(document).ready(function(){
         $("#photographyslides").carousel( { interval: 2000  } );
         $("#photographyslides").carousel('cycle');
+      });
+
+      $("#pixel2").click(function(){
+        load("index.html"); 
+      });
+      $("#pixel2").click(function(){
+        window.location.href = 'index.html';
+        return false;
       });
     </script>
   </body>
