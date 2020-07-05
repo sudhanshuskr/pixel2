@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="modules/bootstrap/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/custom.css" >
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" >
 
@@ -44,20 +45,72 @@
             <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Hardware</a>
+            <a class="nav-link" href="hardware.html">Hardware</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Usability</a>
+            <a class="nav-link" href="usability.html">Usability</a>
           </li>
         </ul>
 
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> Shop Now</a>
+            <a class="nav-link " type="button" data-target="#shopnow" data-toggle="modal"><i class="fa fa-shopping-cart"></i> Shop Now</a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <div id="shopnow" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="content">
+        <div class="modal-content" >
+          <div class="modal-header bg-light">
+            <h4 class="modal-title">Shop Now</h4>
+            <button class="close" data-dismiss = "modal"><span>&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row form-group">
+                <label for="name" class="col-sm-4 col-form-label">Name</label>
+                <div class="col-sm-8">
+                  <input type="text" name="name" placeholder="Name" class="form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <label for="lastname" class="col-sm-4 col-form-label">Last Name</label>
+                <div class="col-sm-8">
+                  <input type 
+                  = "text" name = "lastname" placeholder = "Last Name" class = "form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <label for="phone" class="col-sm-4 col-form-label">Phone</label>
+                <div class="col-sm-8">
+                  <input type="num" name="phone" placeholder="Phone No." class="form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <label for="email" class="col-sm-4 col-form-label">Email ID</label>
+                <div class="col-sm-8">
+                  <input type="text" name="email" placeholder="example@abc.com" class="form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <label for="country" class="col-sm-4 col-form-label">Country</label>
+                <div class="col-sm-8">
+                  <select class="form-control">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Russia</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     
@@ -66,7 +119,8 @@
     <div class="container">
       <div class="row ">
         <div class="col-sm-3 d-flex justify-content-center">
-            <img id="product-image" src="https://rukminim1.flixcart.com/image/832/832/j8esr680/mobile/f/m/d/google-pixel-2-na-original-imaeyfsxhfqwqbr5.jpeg?q=70" class="img-fluid">
+            <!-- <img id="product-image" src="https://rukminim1.flixcart.com/image/832/832/j8esr680/mobile/f/m/d/google-pixel-2-na-original-imaeyfsxhfqwqbr5.jpeg?q=70" class="img-fluid"> -->
+            <img id="product-image" src="images/pixel2.jpg" class="img-fluid">
         </div>
         <div class="col-sm-9 bg-light shadow ">
           <div class="container-fluid">
@@ -125,7 +179,7 @@
               <img src = "images/photography.jpg" alt = "photography" class="rounded dblock mx-auto img-fluid">
             </div> -->
             <div class="col-sm-7">
-              <div id="photographyslides" class="carousel slide" data-ride="carousel">
+              <div id="photographyslides" class="carousel slide" >
                 <ol class="carousel-indicators">
                   <li data-target="#photographyslides" data-slide-to="0" class="active"></li>
                   <li data-target="#photographyslides" data-slide-to="1"></li>
@@ -207,7 +261,8 @@
             </div>
             
             <div class="col-sm-7">
-              <img src = "https://miro.medium.com/max/1400/1*iQ7hgqKPFrL4UNUx3tS-lA.gif" alt = "photography" class="rounded dblock mx-auto img-fluid">
+              <!-- <img src = "https://miro.medium.com/max/1400/1*iQ7hgqKPFrL4UNUx3tS-lA.gif" alt = "photography" class="rounded dblock mx-auto img-fluid"> -->
+              <img src = "images/assistant.gif" alt = "photography" class="rounded dblock mx-auto img-fluid">
             </div>
 
           </div>
@@ -247,9 +302,18 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#photographyslides").carousel( { interval: 2000  } );
+        $("#photographyslides").carousel('cycle');
+      });
+    </script>
   </body>
 </html>
 
